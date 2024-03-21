@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Text Encryptor - Alura">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Days+One&family=Poppins:wght@500;600;900&display=swap" rel="stylesheet"><!--Google Fonts-->
+    <script src="https://kit.fontawesome.com/0cf3687c78.js" crossorigin="anonymous"></script>
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <image src="Images/encriptacion.jpg" alt="Encryption" class="background">
+    <div class="parentContainer">
+        <div class="centralContainer">
+            <div class="leftContainer">
+
+                <div class="textInput">
+                    <textarea name="textAreaLeft" class="textAreaLeft" id="textAreaLeft" cols="30" rows="13" placeholder="Enter text here"></textarea>
+                </div>
+
+                <div class="warnings">
+                    <p class="warning"><i class="fa-solid fa-circle-exclamation"></i> Only lowercase letters without accents</p>
+                </div>
+                
+                <div class="leftButtonsContainer">
+                    <input type="button" value="Encrypt" class="button encrypt" onclick="encrypt()">
+                    <input type="button" value="Decrypt" class="button decrypt" onclick="decrypt()">
+                </div>
+    
+            </div>
+    
+            <div class="rightContainer">
+    
+                <div id="outputText" class="outputText">
+                    <textarea name="" id="textAreaRight" class="textAreaRight" cols="30" rows="7"></textarea>
+                </div>
+
+                <div id="rightButtonsContainer" class="rightButtonsContainer">
+                    <input type="button" value="Copy" class="buttonCopy" onclick="copyText()">
+                </div>
+
+                <div id="withoutMessage" class="withoutMessage">
+                    <img src="Images/mu.png" alt="" class="drawing">
+                    <p class="noMessageText">No message<br>found</p>
+                    <p class="noMessageText">Enter the text you want to encrypt or decrypt.</p>
+                </div>
+
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footerMain">
+            <div class="logo">
+                <p class="logo"><span style="--item:1"><img src="Images/logo.png" alt="" ></span></p>
+            </div>
+            <div class="designed">
+                <p>Designed by <span class="nameDesigned">Johan Aguilar</span> </p>
+            </div>
+    
+            <div class="socialMedia">
+                <a href="https://github.com/johanaguilar12"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/johanaguilar/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="Encryptor.js"></script>
+  
+</body>
+</html>
